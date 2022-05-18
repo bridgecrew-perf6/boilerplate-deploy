@@ -1,0 +1,34 @@
+html {
+  max-width: 1500px;
+  margin: auto;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "section main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header {
+  background-color: blue;
+  grid-area: header;
+}
+nav {
+  background-color: green;
+  grid-area: nav;
+}
+main {
+  background-color: pink;
+  grid-area: main;
+}
+aside {
+  background-color: orange;
+  grid-area: aside;
+}
+footer {
+  background-color: rgb(93, 93, 126);
+  grid-area: footer;
+}
